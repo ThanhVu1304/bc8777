@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai3</title>
+  </head>
+  <body>
+    <label>NhapsoUSD: </label>
+    <input type="number" id="usd" />
+    <button onclick="quyDoi()">Quydoi</button>
+
+    <p id="ketQua"></p>
+
+    <script>
+      function quyDoi() {
+        const TI_GIA = 23500;
+        const soUSD = parseFloat(document.getElementById("usd").value);
+        const soVND = soUSD * TI_GIA;
+
+        document.getElementById("ketQua").innerText =
+          "So tien sau quy doi : " + soVND.toLocaleString() + " VND";
+      }
+    </script>
+  </body>
+</html>

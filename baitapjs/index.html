@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tienluongnhanvienb1</title>
+  </head>
+  <body>
+    <label>Nhập số ngày làm: </label>
+    <input type="number" id="ngayLam" />
+    <button onclick="tinhLuong()">Tính lương</button>
+    <p id="ketQua"></p>
+
+    <script>
+      function tinhLuong() {
+        const LUONG_MOT_NGAY = 100000;
+        const soNgay = document.getElementById("ngayLam").value;
+        const tongLuong = LUONG_MOT_NGAY * soNgay;
+        document.getElementById("ketQua").innerText =
+          "Tổng lương: " + tongLuong + " VND";
+      }
+    </script>
+  </body>
+</html>
+l

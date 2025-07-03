@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai5</title>
+  </head>
+  <body>
+    <label>Nhập số có 2 chữ số: </label>
+    <input type="number" id="soNhap" />
+    <button onclick="tinhTong()">Tính tổng</button>
+
+    <p id="ketQua"></p>
+
+    <script>
+      function tinhTong() {
+        const so = parseInt(document.getElementById("soNhap").value);
+
+        if (so < 10 || so > 99) {
+          document.getElementById("ketQua").innerText =
+            "Vui lòng nhập số có đúng 2 chữ số!";
+          return;
+        }
+
+        const hangDonVi = so % 10;
+        const hangChuc = Math.floor(so / 10);
+
+        const tong = hangDonVi + hangChuc;
+
+        document.getElementById("ketQua").innerText =
+          "Tổng 2 chữ số là: " + tong;
+      }
+    </script>
+  </body>
+</html>
