@@ -3,613 +3,697 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-        --text-10: 10px;
-      }
-    </style>
-    <title>Tailwind</title>
+    <title>Next.js Templates</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+
     <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-[#151937]">
-    <!-- header -->
-    <header class="flex items-center justify-between container mx-auto py-5">
-      <h1 class="text-4xl font-semibold text-white">Cyber Crypto</h1>
-      <nav class="font-medium flex gap-5 space-x-5 text-white">
-        <a href="" class="text-[rgb(31,79,217)]">Home </a>
-        <a href="" class="hover:text-[rgb(31,79,217)]">Pages</a>
-        <a href="" class="hover:text-[rgb(31,79,217)]">Portfolio</a>
-      </nav>
-      <button
-        class="text-white bg-blue-600 px-5 py-3 rounded-md font-semibold cursor-pointer hover:bg-blue-800 transition-all hover:text-red-600 duration-300"
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="w-full border-b bg-white fixed top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
       >
-        Get Started
-      </button>
-    </header>
-    <!-- About -->
-    <section class="py-10">
-      <div class="container mx-auto items-center lg:grid md:grid-cols-1">
-        <!-- left -->
-        <div class="text-white flex-1">
-          <p class="font-bold text-6xl">
-            Trsuted & Secure <br />
-            <span
-              class="bg-gradient-to-r from-[#ffa7a9] to-[#ff5ea3] text-transparent bg-clip-text"
-              >Crypo</span
-            >
-            <span>Market</span> <br />
-            Exchange.
-          </p>
-          <p class="my-10 text-white/75 text-2xl">
-            Already have a website? Try our hosting to <br />
-            alive it with industry-leading load times.
-          </p>
-          <button
-            class="rounded-3xl px-3 py-5 text-lg leading-7 bg-gradient-to-r from-[#ff7df2] to-[#ff275b]"
+        <!-- Left -->
+        <div class="flex items-center space-x-4">
+          <a href="https://nextjstemplates.com/">
+            <img
+              src="./imagine/ảnh bt buoi 8 1.svg"
+              alt="Logo"
+              class="w-100% h-100% rounded-full"
+            />
+          </a>
+          <nav
+            class="hidden md:flex items-center space-x-6 ml-10 text-sm font-medium"
           >
-            Star Trading
-          </button>
-          <p class="text-7xl leading-none mb-5">A+ Rating</p>
-          <p class="text-lg opacity-[0.5]">
-            Avg rating 4.8 makes us world most best apps.
-          </p>
+            <a
+              href="#"
+              class="group inline-flex items-center font-semibold text-blue-600 text-sm"
+            >
+              Templates
+              <i
+                class="fa-solid fa-arrow-down ml-2 text-blue-600 transform transition duration-300 group-hover:-rotate-180"
+              ></i>
+            </a>
+            <a href="https://nextjstemplates.com/docs">Docs</a>
+            <a href="#">Resources</a>
+          </nav>
         </div>
-        <!-- right -->
-        <div class="flex-1">
+
+        <!-- Center  -->
+        <div class="relative hidden md:block w-72">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <i class="fas fa-search text-gray-400"></i>
+          </div>
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full pl-10 pr-4 py-2 border rounded-xl bg-white shadow-sm focus:outline-none focus:ring focus:border-blue-500"
+          />
+        </div>
+
+        <!-- Right -->
+        <div class="flex items-center space-x-4">
+          <a href="https://discord.com/invite/p4EeKnsKw3" target="_blank"
+            ><i class="fa-brands fa-discord text-xl"></i
+          ></a>
+          <a href="https://x.com/nextjstemplate" target="_blank"
+            ><i class="fa-brands fa-x-twitter text-xl"></i
+          ></a>
+          <a href="https://github.com/NextJSTemplates" target="_blank"
+            ><i class="fa-brands fa-github text-xl"></i
+          ></a>
+          <a href="https://nextjstemplates.com/all-access"
+            ><button
+              class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium"
+            >
+              <i class="fa-solid fa-key mr-2"></i>All-Access Pass
+            </button></a
+          >
+          <button
+            class="flex items-center gap-2 border rounded px-4 py-2 bg-black text-white"
+          >
+            <i class="fa-regular fa-circle-user"></i>
+            Account
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- navigation -->
+    <section class="pt-24 lg:pt-32 max-w-7xl mx-auto px-4">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-8 text-center">
+        Solid - Next.js SaaS Boilerplate and Starter Kit
+      </h1>
+      <div class="mt-10">
+        <div class="w-1/2 h-1/2">
+          <a href="https://solid.demo.nextjstemplates.com/" target="_blank">
+            <img
+              src="./imagine/1689052975972solid-design.png"
+              alt="Solid Preview"
+              class="w-full rounded-xl shadow-xl"
+          /></a>
+        </div>
+      </div>
+
+      <div
+        class="mt-10 border rounded-xl p-6 flex flex-col md:flex-row gap-6 justify-between items-center"
+      >
+        <div class="flex flex-col md:flex-row gap-8 w-full md:w-2/3">
+          <div>
+            <p class="text-sm text-gray-500">
+              Last Updated On: <strong class="text-black">06/06/2025</strong>
+            </p>
+            <p class="text-sm text-gray-500">
+              Version: <strong class="text-black">2.1.0</strong>
+            </p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-500">
+              Built with: <span class="text-grey-600">Next.js 15</span>
+            </p>
+            <a
+              href="https://nextjstemplates.com/docs/templates/solid"
+              class="text-sm text-blue-600 underline"
+              >Documentation</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-3 w-full md:w-auto">
+          <a href="#Pricing"
+            ><button
+              class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700"
+            >
+              Download Now
+            </button></a
+          >
+          <a href="https://solid.demo.nextjstemplates.com/" target="_blank"
+            ><button
+              class="bg-black text-white px-4 py-2 rounded-md text-sm hover:opacity-90"
+            >
+              Live Demo
+            </button></a
+          >
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="mt-8 text-gray-700 text-sm leading-relaxed">
+        <p>
+          Solid is a robust Next.js SaaS boilerplate and starter kit, crafted
+          for creating fully-functional SaaS startup websites. It's packed with
+          all the key integrations required for a swift launch of your next SaaS
+          startup. Solid is geared with all the major integrations, components,
+          and pages needed for a seamless launch, including Auth, DB, Blog,
+          Business Pages, and other essential UI elements.
+        </p>
+        <p class="mt-4">
+          With Solid, the development of your SaaS product using Next.js and the
+          most advanced tech stacks becomes a walk in the park.
+        </p>
+      </div>
+      <h2 class="text-2xl font-semibold mb-6">Key Features:</h2>
+
+      <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
+        <li>
+          <span class="font-semibold text-black"
+            >Cutting-edge Technologies:</span
+          >
+          Built on Next.js, React, and TypeScript, you can enjoy swift loading
+          times, advanced features, an optimum user experience, and the
+          advantage of abundant community support.
+        </li>
+        <li>
+          <span class="font-semibold text-black"
+            >Blog Management with Sanity:</span
+          >
+          Sanity CMS for seamless management and creation of your blog content
+          with on-demand revalidation by tight webhook integration with sanity.
+        </li>
+        <li>
+          <span class="font-semibold text-black"
+            >Seamless Multi-factor Authentication with NextAuth:</span
+          >
+          We've implemented secure login functionality with NextAuth, enabling
+          users to authenticate securely and access your application with
+          password reset, social login, magic link and traditional way of
+          authentication.
+        </li>
+        <li>
+          <span class="font-semibold text-black">PostgreSQL Database:</span>
+          Experience high performance, scalability, and reliability with
+          PostgreSQL database by any provider such as Supabase.
+        </li>
+        <li>
+          <span class="font-semibold text-black"
+            >Stripe Integration for Subscription Payments:</span
+          >
+          Payment integration is done with Stripe, enabling flawless acceptance
+          of subscription payments.
+        </li>
+        <li>
+          <span class="font-semibold text-black">Next-Level Code Quality:</span>
+          We've implemented best practices following Next.js's recommended
+          settings, best practices, and rules.
+        </li>
+        <li>
+          <span class="font-semibold text-black">TypeScript:</span>
+          The entire template is scripted in TypeScript.
+        </li>
+        <li>
+          <span class="font-semibold text-black">Algolia:</span>
+          Algolia integration for best search experience.
+        </li>
+        <li>
+          <span class="font-semibold text-black"
+            >Transactional Emails via SMTP:</span
+          >
+          Send transactional emails easily by simply adding SMTP credentials.
+        </li>
+        <li>
+          <span class="font-semibold text-black"
+            >MailChimp Integration for Newsletters:</span
+          >
+          Effortlessly send newsletters to users and automatically add new users
+          to your Mailchimp email list.
+        </li>
+      </ul>
+      <img src="./imagine/1689052975972solid-design (1).png" alt="" />
+      <div
+        class="max-w-screen-xl mx-auto px-4 mt-10 text-gray-800 text-sm leading-relaxed"
+      >
+        <p class="mb-4">
+          <strong>High-Quality Design:</strong> Meticulously crafted with a keen
+          focus on modern design trends, best practices, and an exceptional user
+          experience.
+        </p>
+        <p class="mb-4">
+          <strong>Pre-made SaaS Pages:</strong> Ready-to-use SaaS startup
+          business pages such as about, contact, pricing, dynamic blog, dynamic
+          docs, auth integrated login, auth integrated registration, and more.
+        </p>
+        <p class="mb-4">
+          <strong>Comprehensive Docs Portal:</strong> Built-in support to
+          develop a user-friendly documentation portal by leveraging the power
+          of MDX.
+        </p>
+        <p class="mb-4">
+          <strong>Essential UI Components:</strong> An extensive collection of
+          essential UI components, each offering various customization options
+          and multiple variations styled with Tailwind CSS.
+        </p>
+        <p>
+          <strong>SEO and Performance Optimized:</strong> This means designed to
+          load quickly, run smoothly, and provide an improved user experience,
+          and be crafted following all SEO best practices. This could include
+          features like mobile responsiveness, fast loading times, efficient
+          coding, and compatibility with various browsers and devices.
+        </p>
+      </div>
+      <img class="mt-10" src="imagine/2222222.png" alt="" />
+      <div
+        class="max-w-screen-xl mx-auto px-4 mt-12 text-gray-800 text-sm leading-relaxed"
+      >
+        <p class="mb-4">
+          <strong>Dark Mode Support:</strong> Highly-Optimized Dark Mode feature
+          lets you tailor your user interface to fit your SaaS brand's unique
+          requirements. You can play around with themes and switch on the dark
+          mode with ease, thanks to our built-in support.
+        </p>
+        <p class="mb-10">
+          Moreover, Solid offers an array of essential UI components styled with
+          Tailwind CSS, and pre-made SaaS pages such as about, contact, pricing,
+          dynamic blog, dynamic docs, auth integrated login, auth integrated
+          registration, and more. Solid is not just a solution, it's the key to
+          a swift and successful launch of your SaaS startup website with
+          cutting-edge features.
+        </p>
+
+        <h2 class="text-lg font-semibold mb-4">March 2025</h2>
+        <ul class="list-disc pl-6 space-y-2 mb-10">
+          <li>Upgraded to Tailwind v4 and latest version of Next.js.</li>
+          <li>
+            Updated framer-motion and next-auth to latest version for
+            compatibility with Next.js 15.
+          </li>
+          <li>Fix peer dependency error during installation.</li>
+          <li>Using tailwind typography plugin for markdown styles.</li>
+          <li>
+            Refactor docs pages, separate sidebar navigation to
+            <code class="bg-gray-100 px-1 rounded text-xs">layout.tsx</code>
+            file.
+          </li>
+          <li>Fix checkbox not appearing and alignment issue.</li>
+          <li>Refactor search menu.</li>
+        </ul>
+
+        <h2 class="text-lg font-semibold mb-4">November 2024</h2>
+        <ul class="list-disc pl-6 space-y-2 mb-10">
+          <li>Upgrade to Next.js 15</li>
+        </ul>
+
+        <h2 class="text-lg font-semibold mb-4">October 2024</h2>
+        <ul class="list-disc pl-6 space-y-2 mb-10">
+          <li>Removed package-lock file</li>
+          <li>Integrated zod for Form validation</li>
+          <li>Integrated stripe webhook</li>
+        </ul>
+        <h2 class="text-lg font-semibold mb-4">September 2024</h2>
+        <ul class="list-disc pl-6 space-y-2 mb-10">
+          <li>Fix layout issue on mobile device.</li>
+          <li>Fix table component not aligned properly.</li>
+          <li>Improve dark mode contrast ratio.</li>
+          <li>Fix dev warning for `next/image` during development.</li>
+        </ul>
+
+        <h2 class="text-lg font-semibold mb-4">August 2024</h2>
+        <ul class="list-disc pl-6 space-y-2 mb-10">
+          <li>Release of Solid Template version 2.0</li>
+          <li>Added Blog and Docs feature using MDX and Contentlayer.</li>
+          <li>Added Auth with next-auth and Stripe Subscription flow.</li>
+          <li>New Design and Animation</li>
+          <li>Responsive layout and better accessibility</li>
+        </ul>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center bg-white p-5 rounded-xl shadow-sm mt-10 border border-gray-200"
+      >
+        <!-- Tags -->
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="font-semibold">Tags:</span>
+          <a href="https://nextjstemplates.com/starter"
+            ><span class="px-3 py-1 bg-gray-100 rounded-full text-sm"
+              >Starter</span
+            ></a
+          >
+          <a href="https://nextjstemplates.com/boilerplate"
+            ><span class="px-3 py-1 bg-gray-100 rounded-full text-sm"
+              >Boilerplate</span
+            ></a
+          >
+          <a href="https://nextjstemplates.com/software"
+            ><span class="px-3 py-1 bg-gray-100 rounded-full text-sm"
+              >Software</span
+            ></a
+          >
+          <a href="https://nextjstemplates.com/blog-template"
+            ><span class="px-3 py-1 bg-gray-100 rounded-full text-sm"
+              >Blog</span
+            ></a
+          >
+          <a href="https://nextjstemplates.com/startup"
+            ><span class="px-3 py-1 bg-gray-100 rounded-full text-sm"
+              >Startup</span
+            ></a
+          >
+          <a href="https://nextjstemplates.com/saas"
+            ><span class="px-3 py-1 bg-gray-100 rounded-full text-sm"
+              >SaaS</span
+            >
+          </a>
+        </div>
+
+        <div class="flex items-center gap-3 mt-4 lg:mt-0">
+          <span class="font-semibold">Share This:</span>
+          <a
+            href="https://www.linkedin.com/shareArticle/?url=https://nextjstemplates.com/templates/solid&title=Solid%20-%20Next.js%20SaaS%20Boilerplate%20and%20Starter%20Kit"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+
+          <a
+            href="https://x.com/intent/post?url=https%3A%2F%2Fnextjstemplates.com%2Ftemplates%2Fsolid&text=Solid%20-%20Next.js%20SaaS%20Boilerplate%20and%20Starter%20Kit"
+            ><i class="fa-solid fa-xmark"></i
+          ></a>
+          <a href="https://www.facebook.com/share_channel/#" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+
+          <a
+            href="https://www.pinterest.com/pin/create/button/?url=https://nextjstemplates.com/templates/solid&description=Solid%20-%20Next.js%20SaaS%20Boilerplate%20and%20Starter%20Kit"
+            target="_blank"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+        </div>
+      </div>
+      <div
+        class="mt-10 rounded-xl overflow-hidden shadow-sm bg-gradient-to-r from-white via-blue-50 to-white px-5 py-10"
+      >
+        <div
+          class="flex flex-col items-center text-center relative lg:flex-row lg:justify-center lg:items-center"
+        >
           <img
-            class="w-full"
-            src="https://cybersoft-crypto.vercel.app/img/bank.png"
-            alt=""
+            src="./imagine/image-1.webp"
+            alt="left image"
+            class="hidden lg:block absolute left-0 bottom-0 w-32 object-contain lg:w-48"
+          />
+
+          <div
+            class="max-w-xl z-10 bg-gradient-to-r from-[#f8fafc] via-[#e9f0ff] to-[#f8fafc] px-5 py-10"
+          >
+            <h2 class="text-2xl font-bold mb-2">Before You Buy Single!</h2>
+            <p class="text-gray-600 mb-2">
+              Get Lifetime Access to All of our Templates Instantly with
+              Commercial<br />
+              License and Premium Features
+            </p>
+            <p class="font-semibold mb-4">
+              Save Over 90% with our All-Access Pass
+            </p>
+            <a
+              href="https://nextjstemplates.com/templates/solid"
+              class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
+            >
+              Purchase Now
+            </a>
+          </div>
+
+          <img
+            src="./imagine/image-2.webp"
+            alt="right image"
+            class="hidden lg:block absolute right-0 bottom-0 w-32 object-contain lg:w-48"
           />
         </div>
       </div>
-    </section>
-    <!-- Platform -->
-    <section>
-      <div class="container mx-auto">
-        <h2
-          class="text-6xl leading-none text-white flex items-center justify-center"
-        >
-          Trusted
-          <span
-            class="bg-gradient-to-r from-[#ffa7a9] to-[#ff5ea3] text-transparent bg-clip-text"
-            >Cryptocurrency</span
-          >
-          Platform
+
+      <div id="Pricing" class="text-center px-4 md:px-0 mt-20">
+        <h2 class="text-3xl md:text-4xl font-bold">
+          Simple Affordable Pricing
         </h2>
-        <p
-          class="text-lg leading-7 opacity-[0.5] text-white flex items-center justify-center"
-        >
-          jano has a variety of features that make it the best place to start
-          trading
+        <p class="mt-2 text-gray-500">
+          Choose the license variation you need depending on your requirements.
         </p>
+      </div>
 
-        <!-- <div class="flex items-center justify-center gap-2">
-          <div
-            class="relative after: left text-violet-500 py-5 px-3 after:content-[''] after:absolute after:bottom-0 after:w-full after:h-1 after:bg-violet-500"
-          >
-            Profile
-          </div>
-          <div>Contact</div> -->
-        <!-- </div> -->
+      <div class="mt-6 flex justify-center">
+        <div
+          class="flex items-center gap-3 text-sm text-gray-600 border border-gray-200 rounded-full px-4 py-2 shadow-sm bg-white"
+        >
+          <span class="text-blue-600">🔍</span>
 
-        <div class="mb-4">
-          <ul
-            class="flex justify-center flex-wrap-mb-px text-sm font-medium text-center"
-            id="default-tab"
-            data-tabs-toggle="#default-tab-content"
-            role="tablist"
+          <span>This Template is Also Included in</span>
+          <a
+            href="#"
+            class="font-semibold underline underline-offset-2 hover:text-black"
+            >Get All-Access Pass →</a
           >
-            <li class="me-2" role="presentation">
-              <button
-                class="inline-block p-4 border-b-2 rounded-t-lg"
-                id="profile-tab"
-                data-tabs-target="#profile"
-                type="button"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-              >
-                Profile
-              </button>
-            </li>
-            <li class="me-2" role="presentation">
-              <button
-                class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                id="dashboard-tab"
-                data-tabs-target="#dashboard"
-                type="button"
-                role="tab"
-                aria-controls="dashboard"
-                aria-selected="false"
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div id="default-tab-content">
-          <div
-            class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
-            id="profile"
-            role="tabpanel"
-            aria-labelledby="profile-tab"
+
+          <span class="text-gray-300">|</span>
+
+          <a href="#" class="text-blue-600 font-semibold hover:text-blue-800"
+            >Save Over 90%</a
           >
-            <div
-              class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
-            >
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="text-sm text-gray-500 dark:text-gray-400">
-              This is some placeholder content the
-              <strong class="font-medium text-gray-800 dark:text-white"
-                >Profile tab's associated content</strong
-              >. Clicking another tab will toggle the visibility of this one for
-              the next. The tab JavaScript swaps classes to control the content
-              visibility and styling.
-            </p>
-          </div>
-          <div
-            class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
-            id="dashboard"
-            role="tabpanel"
-            aria-labelledby="dashboard-tab"
-          >
-            <div
-              class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
-            >
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg"
-                      src="https://cybersoft-crypto.vercel.app/img/trusted_1.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-5">
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-                    >
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <a
-                      href="#"
-                      class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Read more
-                      <svg
-                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="text-sm text-gray-500 dark:text-gray-400">
-              This is some placeholder content the
-              <strong class="font-medium text-gray-800 dark:text-white"
-                >Dashboard tab's associated content</strong
-              >. Clicking another tab will toggle the visibility of this one for
-              the next. The tab JavaScript swaps classes to control the content
-              visibility and styling.
-            </p>
-          </div>
+          <span>with All-Access Pass</span>
         </div>
       </div>
     </section>
-    <section></section>
-    <footer>Daylafooterby</footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <div
+      class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4 md:px-0 mt-16 max-w-7xl mx-auto"
+    >
+      <div class="border rounded-xl p-6 shadow-sm bg-white text-center">
+        <h3 class="text-lg font-semibold">Basic</h3>
+        <p class="text-sm text-gray-500">Free Open-source Version</p>
+        <h2 class="mt-4 text-xl font-bold">Free - Open Source</h2>
+        <p class="text-xs text-gray-400">Free Open-source Version</p>
+        <button
+          class="mt-4 bg-black text-white text-sm font-semibold py-2 px-4 rounded-md w-full"
+        >
+          Download Now
+        </button>
+        <ul class="mt-4 text-sm text-left space-y-2">
+          <li>Free Open-source version with essentials</li>
+          <li>Personal and Commercial Use</li>
+          <li>Basic Features included</li>
+          <li>Next.js Files</li>
+          <li>HTML/CSS Files</li>
+        </ul>
+      </div>
+
+      <div class="border rounded-xl p-6 shadow-sm bg-white text-center">
+        <h3 class="text-lg font-semibold">Starter</h3>
+        <p class="text-sm text-gray-500">
+          With All Pro Features, Components and Pages
+        </p>
+        <h2 class="mt-4 text-xl font-bold">
+          <span class="line-through text-gray-400 mr-1 text-base">$100</span>
+          $59<span class="text-xs">/Lifetime</span>
+        </h2>
+        <button
+          class="mt-4 bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-md w-full"
+        >
+          Purchase Now
+        </button>
+        <ul class="mt-4 text-sm text-left space-y-2">
+          <li>Instant Access to Template</li>
+          <li>Commercial License</li>
+          <li>Premium Features Included</li>
+          <li>Next.js Files</li>
+          <li>Tailwind CSS Files</li>
+          <li>Email Support</li>
+          <li>Community Support</li>
+          <li>Use on Up to 1 Project</li>
+          <li>Lifetime Free Updates</li>
+        </ul>
+      </div>
+
+      <div
+        class="border-2 border-purple-600 rounded-xl p-6 shadow-md bg-white text-center relative"
+      >
+        <div
+          class="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow"
+        >
+          Most Popular
+        </div>
+        <h3 class="text-lg font-semibold mt-4">Business</h3>
+        <p class="text-sm text-gray-500">
+          With All Pro Features, Components and Pages
+        </p>
+        <h2 class="mt-4 text-xl font-bold">
+          <span class="line-through text-gray-400 mr-1 text-base">$287</span>
+          $169<span class="text-xs">/Lifetime</span>
+        </h2>
+        <button
+          class="mt-4 bg-purple-500 text-white text-sm font-semibold py-2 px-4 rounded-md w-full"
+        >
+          Purchase Now
+        </button>
+        <ul class="mt-4 text-sm text-left space-y-2">
+          <li>Instant Access to Template</li>
+          <li>Commercial License</li>
+          <li>Premium Features Included</li>
+          <li>Next.js Files</li>
+          <li>Tailwind CSS Files</li>
+          <li>Email Support</li>
+          <li>Community Support</li>
+          <li>Use on Up to 04 Projects</li>
+          <li>Lifetime Free Updates</li>
+        </ul>
+      </div>
+
+      <div class="border rounded-xl p-6 shadow-sm bg-white text-center">
+        <h3 class="text-lg font-semibold">Extended</h3>
+        <p class="text-sm text-gray-500">
+          With All Pro Features, Components and Pages
+        </p>
+        <h2 class="mt-4 text-xl font-bold">
+          <span class="line-through text-gray-400 mr-1 text-base">$848</span>
+          $499<span class="text-xs">/Lifetime</span>
+        </h2>
+        <button
+          class="mt-4 bg-cyan-600 text-white text-sm font-semibold py-2 px-4 rounded-md w-full"
+        >
+          Purchase Now
+        </button>
+        <ul class="mt-4 text-sm text-left space-y-2">
+          <li>Instant Access to Template</li>
+          <li>Commercial License</li>
+          <li>Premium Features Included</li>
+          <li>Next.js Files</li>
+          <li>Tailwind CSS Files</li>
+          <li>Email Support</li>
+          <li>Community Support</li>
+          <li>Use on Unlimited Projects</li>
+          <li>Lifetime Free Updates</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center space-y-4 py-10">
+      <a href="https://nextjstemplates.com/license" target="_blank"
+        ><button
+          class="px-4 py-2 border border-gray-300 rounded-md flex items-center text-sm font-medium"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm4.243 4.243A6.978 6.978 0 0012 19a6.978 6.978 0 00-4.243-1.757M19 9l-7-7-7 7"
+            />
+          </svg>
+          Template License
+        </button></a
+      >
+
+      <div
+        class="px-4 py-2 border border-gray-300 rounded-full text-sm flex items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 text-green-500 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm4.243 4.243A6.978 6.978 0 0012 19a6.978 6.978 0 00-4.243-1.757M19 9l-7-7-7 7"
+          />
+        </svg>
+        100% Safe and Secure Payments Powered by -
+        <span class="font-semibold ml-1">paddle</span>
+      </div>
+
+      <p class="text-xs text-gray-500 text-center">
+        A VAT receipt will be provided via email <br />
+        after making purchase
+      </p>
+
+      <div class="flex flex-wrap justify-center items-center gap-5 pt-4 w-full">
+        <img src="./imagine/vissa.svg" alt="Visa" class="h-6" />
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-50 py-14 px-6 md:px-20 text-sm text-gray-600">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img
+              src="imagine/ảnh bt buoi 8 1.svg"
+              alt="logo"
+              class="w-6 h-6 w-full"
+            />
+          </div>
+          <p class="text-gray-500">
+            Professionally designed, coded, and ready to use Next.js templates,
+            starters and boilerplates.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Our Products</h4>
+          <ul class="space-y-1">
+            <li>Lineicons</li>
+            <li>TailAdmin</li>
+            <li>TailGrids</li>
+            <li>GrayGrids</li>
+            <li>SaaSBold</li>
+            <li>UIdeck</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Useful Links</h4>
+          <ul class="space-y-1">
+            <li>Next.js Website</li>
+            <li>Next.js SaaS Boilerplate</li>
+            <li>Next.js Templates</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Terms and Policies</h4>
+          <ul class="space-y-1">
+            <li>License</li>
+            <li>Privacy Policy</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+
+        <!-- Support & Help -->
+        <div>
+          <h4 class="font-semibold mb-2">Support & Help</h4>
+          <ul class="space-y-1">
+            <li>Support Ticket</li>
+            <li>Docs</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom line -->
+      <div
+        class="mt-10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-4"
+      >
+        <p>
+          © Copyright 2025 - nextjstemplates.com | A Product by
+          <span class="text-indigo-500 font-semibold">PIMJO</span>
+        </p>
+        <div class="flex gap-3 text-xl text-gray-600">
+          <i class="fab fa-discord"></i>
+          <i class="fas fa-xmark"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
